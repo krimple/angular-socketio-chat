@@ -30,7 +30,6 @@ angular.module('chatApp')
     } 
     $scope.$apply(function() {
       $scope.messageLog = messageFormatter(new Date(), data.source, data.payload) + $scope.messageLog;
-      $scope.message = '';
     });
   });
 });
