@@ -1,5 +1,5 @@
 'use strict';
-angular.module('appApp')
+angular.module('chatApp')
 .factory('chatSocket', function (socketFactory) {
       var socket = socketFactory();
       socket.forward('broadcast');

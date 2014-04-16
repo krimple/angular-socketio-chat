@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('appApp')
+angular.module('chatApp')
 .controller('SocketCtrl', function ($log, $scope, chatSocket, messageFormatter, nickName) {
   $scope.nickName = nickName;
   $scope.messageLog = 'Ready to chat!';

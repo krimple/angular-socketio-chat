@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('appApp')
+angular.module('chatApp')
   .value('messageFormatter', function(date, nick, message) {
     return date.toLocaleTimeString() + ' - ' + 
            nick + ' - ' + 
