@@ -19,4 +19,7 @@ say 'ye olde') chat program. I wanted to write it as angularly as
 possible (is that really a word?) and use the traditional Grunt-based
 workflow of Yeoman where possible.
 
+I am not using Node at this point for anything more than a chat
+websocket server, however now you're nicely set up for an /api (see the
+/route directory and js file for a stupid JSON example). 
 
