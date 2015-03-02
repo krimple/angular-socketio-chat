@@ -29,7 +29,7 @@ angular.module('chatApp')
       return;
     } 
     $scope.$apply(function() {
-      $scope.messageLog = messageFormatter(new Date(), data.source, data.payload) + $scope.messageLog;
+      $scope.messageLog = $scope.messageLog + messageFormatter(new Date(), data.source, data.payload);
     });
   });
 });

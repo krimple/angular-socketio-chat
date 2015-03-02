@@ -37,13 +37,13 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 
-// for production
-app.use(express.static(__dirname +  '/public'));
+// for dev
+app.use(express.static(__dirname +  '/angular-frontend/app/'));
 
-// for development purposes, access during
-// iterative development as /angular-dev
-// see below if you want to add back the development env
-app.use('/angular-dev', express.static(__dirname  + '/angular-frontend/app'));
+// for production, do 'grunt --force' and then comment the line above
+// and uncomment the line below
+
+//app.use(express.static(__dirname +  '/public'));
 
 /// catch 404 and forwarding to error handler
 app.use(function (req, res, next) {
